@@ -1,0 +1,97 @@
+.hero__wrapper {
+   /* background-color: var(--first-brand-color); */
+   position: relative;
+}
+.hero {
+    padding: 15rem 0;
+    position: relative;
+}
+.hero .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+}
+.hero .title,.hero .sub-title, .hero .text {
+    margin-bottom: 0;
+}
+.hero .text span {
+    font-size: 3rem;
+    color: inherit;
+    display: block;
+    font-family: var(--main-title-font);
+    text-align: left;
+}
+.hero .item {
+    padding: 2rem;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .item:nth-child(1) {
+  background-color: var(--fourth-brand-color);
+}
+.hero .item:nth-child(2) {
+    background-image: url('../img/img1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero .item:nth-child(3) {
+    background-color: var(--first-brand-color);
+}
+.hero .item:nth-child(4) {
+    background-image: url('../img/img2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero .item:nth-child(5) {
+    background-color: var(--third-brand-color);
+}
+.hero .item:nth-child(6) {
+    background-color: var(--fourth-brand-color);
+}
+.hero .item:nth-child(7) {
+    background-image: url('../img/img4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero .item:nth-child(8) {
+    background-color: var(--second-brand-color);
+    background-image: url('../img/leave.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top left;
+}
+.hero .item:nth-child(9) {
+    background-image: url('../img/img3.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.hero .img {
+    height: 100%;object-fit: cover;
+}
+.hero .item:nth-child(8) .text {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+.hero .btn {
+    margin-bottom: 0;
+}
+.img-sm {
+    width: 8rem;
+}
+@media screen and (min-width: 768px)  {
+    .hero .list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: .5rem;
+        row-gap: .5rem;
+    }
+}
